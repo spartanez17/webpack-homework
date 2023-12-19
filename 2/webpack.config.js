@@ -6,7 +6,10 @@ module.exports = {
 
 	// ...ваш конфиг
 	entry: {
-		app: './src/app.js',
+		app: {
+			import: './src/app.js',
+			dependOn: 'vendor'
+		},
 		home: {
 			import: './src/pages/home.js',
 			dependOn: 'vendor'
